@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/25cbd42782.js" crossorigin="anonymous"></script>
+
     <title>Tela</title>
 </head>
 
 <body>
     <div class="main">
         <div class="search">
-            <label for="">lupa</label>
+            <i class="fa fa-search"></i>
             <input type="search" name="" id="">
         </div>
+        <label for="" class="topic">Nem Releases</label>
+        <div class="event"></div>
+        <div class="event"></div>
+
+    </div>
     </div>
 </body>
 
@@ -33,20 +40,53 @@
     .search {
         position: absolute;
         transform: translate(-50%, -50%);
+        background-color: #1a172a;
+        border-radius: 5px;
         top: 10%;
         left: 35%;
-    }
-    
-    input {
-        background-color: #1a172a;
-        border: none;
-        border-radius: 5px;
-        height: 25px;
+        height: 30px;
         width: 230px;
     }
     
-    label {
+    input {
         position: absolute;
+        top: 0;
+        left: 30px;
+        background-color: #1a172a;
         color: white;
+        border: none;
+        outline: 0;
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .topic {
+        position: absolute;
+        top: 20%;
+        left: 27%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: large;
+    }
+    
+    .event {
+        position: relative;
+        transform: translate(-50%, -50%);
+        top: 20%;
+        left: 30%;
+        width: 50px;
+        height: 30px;
+        background-color: aqua;
+        margin: 5px;
+    }
+    
+    i {
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        transform: translate(-50%, -50%);
+        color: white;
+        z-index: 1;
     }
 </style>
