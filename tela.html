@@ -11,14 +11,19 @@
 </head>
 
 <body>
+
     <div class="main">
+        <div class="side-bar"></div>
         <div class="search">
             <i class="fa fa-search"></i>
             <input type="search" name="" id="">
         </div>
         <label for="" class="topic">Nem Releases</label>
-        <div class="event"></div>
-        <div class="event"></div>
+        <div class="list">
+            <div class="event"></div>
+            <div class="event"></div>
+        </div>
+
 
     </div>
     </div>
@@ -31,8 +36,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 800px;
-        height: 500px;
+        width: 852px;
+        height: 545px;
         border-radius: 10px;
         background-color: #2d2a47;
     }
@@ -43,7 +48,7 @@
         background-color: #1a172a;
         border-radius: 5px;
         top: 10%;
-        left: 35%;
+        left: 40%;
         height: 30px;
         width: 230px;
     }
@@ -51,7 +56,7 @@
     input {
         position: absolute;
         top: 0;
-        left: 30px;
+        left: 40px;
         background-color: #1a172a;
         color: white;
         border: none;
@@ -63,8 +68,8 @@
     
     .topic {
         position: absolute;
-        top: 20%;
-        left: 27%;
+        top: 122px;
+        left: 36%;
         transform: translate(-50%, -50%);
         color: white;
         font-size: large;
@@ -74,11 +79,13 @@
         position: relative;
         transform: translate(-50%, -50%);
         top: 20%;
-        left: 30%;
-        width: 50px;
-        height: 30px;
+        left: 39%;
+        width: 287px;
+        height: 72px;
         background-color: aqua;
         margin: 5px;
+        display: inline-block;
+        border-radius: 10px;
     }
     
     i {
@@ -87,6 +94,33 @@
         left: 7%;
         transform: translate(-50%, -50%);
         color: white;
+        z-index: 1;
+    }
+    
+    .list {
+        position: absolute;
+        width: 680px;
+        height: 49px;
+        top: 164px;
+        left: 99px;
+    }
+    
+    .fa-search:before {
+        content: "\f002";
+        font-size: 12px;
+        position: absolute;
+        top: -5px;
+        left: 5px;
+    }
+    
+    .side-bar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #1a172a;
+        height: 100%;
+        width: 182px;
+        border-radius: 10px 0 0 10px;
         z-index: 1;
     }
 </style>
